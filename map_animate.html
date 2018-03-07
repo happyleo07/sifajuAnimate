@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/animate_demo.css">
+    <link rel="stylesheet" href="css/nav_animate.css">
+
+    <title>旋转demo</title>
+</head>
+
+<body>
+    <div class="rotate_bbox">
+        <div class="five_click">
+            <div class="fivestar"></div>
+            <img src="img/five_title.png" alt="">
+        </div>
+        <!-- </a> -->
+    </div>
+    <div class="nav_animate_bbox">
+        <div class="rotate_box1">
+            <div class="ce3 rotate_po"></div>
+            <div class="ce2 rotate_po"></div>
+            <div class="ce1 rotate_po"></div>
+            <div class="title_box">
+                <a href="#" class="jj">简介</a>
+            </div>
+            <div class="nav_title nav5_1">
+                <a href="#" class="jj">动态</a>
+                <!-- <a href="#" class="jj">OA</a> -->
+            </div>
+            <div class="nav_title nav5_2">
+                <a href="#" class="jj">机构</a>
+            </div>
+            <div class="nav_title nav5_3">
+                <a href="#" class="jj">资产</a>
+            </div>
+            <div class="nav_title nav5_4">
+                <a href="#" class="jj">人员</a>
+            </div>
+            <div class="nav_title nav5_5">
+                <a href="#" class="jj">数据</a>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.11.0.js"></script>
+    <script>
+        $(function() {
+            $(".nav_animate_bbox").hide();
+            $(".five_click .fivestar").addClass("fivetar_active");
+            $(".five_click").click(function() {
+                $(".rotate_bbox").hide();
+                $(".nav_animate_bbox").show();
+                $(".rotate_box1 .ce3,.rotate_box1 .ce1").addClass("rotate_clockwise");
+                $(".rotate_box1 .ce2").addClass("rotate_anticlockwise");
+                $(".fivestar").addClass("fivetar_active");
+                $(".title_box a").addClass("nav_avtice");
+                $(".nav_title").addClass("nav_avtice");
+            });
+        });
+    </script>
+</body>
+
+</html>

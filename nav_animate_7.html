@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/nav_animate.css">
+    <title>旋转demo</title>
+</head>
+
+<body>
+    <div class="nav_animate_bbox">
+        <div class="rotate_box1">
+            <div class="ce3 rotate_po"></div>
+            <div class="ce2 rotate_po"></div>
+            <div class="ce1 rotate_po"></div>
+            <div class="title_box">
+                <a href="#">安全预警</a>
+                <!-- <a href="#" class="jj">首页</a> -->
+            </div>
+            <div class="nav_title nav7_1">
+                <a href="#">监视</br>监控</a>
+                <!-- <a href="#" class="jj">OA</a> -->
+            </div>
+            <div class="nav_title nav7_2">
+                <a href="#">警察</br>协调</a>
+            </div>
+            <div class="nav_title nav7_3">
+                <a href="#">检查</br>监督</a>
+            </div>
+            <div class="nav_title nav7_4">
+                <a href="#">应急</br>处置</a>
+            </div>
+            <div class="nav_title nav7_5">
+                <a href="#">信息</br>管理</a>
+            </div>
+            <div class="nav_title nav7_6">
+                <a href="#" class="jj">危险源</a>
+            </div>
+            <div class="nav_title nav7_7">
+                <a href="#">最后</br>一公里</a>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.11.0.js"></script>
+    <script>
+        $(function() {
+            $(".rotate_box1 .ce3,.rotate_box1 .ce1").addClass("rotate_clockwise");
+            $(".rotate_box1 .ce2").addClass("rotate_anticlockwise");
+            // $(".fivestar").addClass("fivetar_active");
+            $(".title_box a").addClass("nav_avtice");
+            $(".nav_title").addClass("nav_avtice");
+        });
+    </script>
+</body>
+
+</html>

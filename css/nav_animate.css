@@ -1,0 +1,525 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+input,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*   之前我采用*{margin:0; padding:0;},但是相对这里的写法，还是建议这里的写法，因为*代表所有的标签，每次读取这段代码的时候都要解析*号，所耗费的时间更长，虽然这里写的代码多一些，但是加载的速度比*要快。  */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset,
+img {
+    border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+caption,
+th {
+    text-align: left;
+}
+
+abbr,
+acronym {
+    border: 0;
+}
+
+html {
+    width: 100%;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "微软雅黑";
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.hide {
+    display: none;
+}
+
+.nav_animate_bbox {
+    width: 600px;
+    height: 600px;
+    background: #192944;
+    position: absolute;
+    z-index: 9;
+    top: 50%;
+    left: 50%;
+    margin-left: -300px;
+    margin-top: -300px;
+}
+
+.rotate_box11 {
+    width: 600px;
+    height: 600px;
+    background: #192944;
+    margin: 0 auto;
+    position: relative;
+    z-index: 9;
+}
+
+.rotate_po {
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    z-index: 10;
+}
+
+.rotate_box1 .ce3 {
+    width: 271px;
+    height: 272px;
+    background: url(../img/ce3.png) no-repeat;
+}
+
+.rotate_box1 .ce2 {
+    width: 271px;
+    height: 272px;
+    background: url(../img/ce2.png) no-repeat;
+}
+
+.rotate_box1 .ce1 {
+    width: 271px;
+    height: 272px;
+    background: url(../img/ce1.png) no-repeat;
+}
+
+.rotate_clockwise {
+    animation: rotate_clockwise 1.5s;
+    -webkit-animation: rotate_clockwise 1.5s;
+    -moz-animation: rotate_clockwise 1.5s;
+    -ms-animation: rotate_clockwise 1.5s;
+}
+
+.rotate_anticlockwise {
+    animation: rotate_anticlockwise 1.5s;
+    -webkit-animation: rotate_anticlockwise 1.5s;
+    -moz-animation: rotate_anticlockwise 1.5s;
+    -ms-animation: rotate_anticlockwise 1.5s;
+}
+
+
+/* 旋转动画 */
+
+@keyframes rotate_clockwise {
+    0% {
+        transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        /* IE 9 */
+        -webkit-transform: rotate(0deg);
+        /* Safari and Chrome */
+    }
+    100% {
+        transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        /* IE 9 */
+        -webkit-transform: rotate(360deg);
+        /* Safari and Chrome */
+    }
+}
+
+
+/* 逆时针旋转动画 */
+
+@keyframes rotate_anticlockwise {
+    0% {
+        transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        /* IE 9 */
+        -webkit-transform: rotate(0deg);
+        /* Safari and Chrome */
+    }
+    100% {
+        transform: rotate(-360deg);
+        -ms-transform: rotate(-360deg);
+        -moz-transform: rotate(-360deg);
+        /* IE 9 */
+        -webkit-transform: rotate(-360deg);
+        /* Safari and Chrome */
+    }
+}
+
+.title_box {
+    width: 90px;
+    height: 120px;
+    position: absolute;
+    left: 240px;
+    top: 230px;
+    z-index: 11;
+    text-align: center
+}
+
+.title_box a {
+    text-align: center;
+    font-size: 39px;
+    color: #ffffff;
+    opacity: 0.6;
+    display: block;
+}
+
+.title_box a.jj {
+    line-height: 120px;
+}
+
+.title_box a:hover {
+    opacity: 1;
+}
+
+.nav_title {
+    width: 164px;
+    height: 164px;
+    position: absolute;
+    z-index: 12;
+}
+
+.nav_title a {
+    display: block;
+    width: 75px;
+    height: 70px;
+    margin: 0 auto;
+    color: #ffffff;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 50px;
+    opacity: 0.6;
+}
+
+.nav_title:hover a {
+    opacity: 1;
+}
+
+.nav_title a.jj {
+    line-height: 164px;
+    margin-top: 0 !important;
+}
+
+
+/* 三个项 */
+
+.nav3_1 {
+    top: 40px;
+    left: 190px;
+    background: url(../img/nav_title_bg.png) no-repeat;
+}
+
+.nav3_1:hover {
+    background: url(../img/nav_title_active_bg.png) no-repeat;
+}
+
+.nav3_2 {
+    top: 300px;
+    left: 330px;
+    background: url(../img/nav_title_bg3.png) no-repeat;
+}
+
+.nav3_2:hover {
+    background: url(../img/nav_title_active_bg3.png) no-repeat;
+}
+
+.nav3_3 {
+    top: 310px;
+    left: 80px;
+    background: url(../img/nav_title_bg5.png) no-repeat;
+}
+
+.nav3_3:hover {
+    background: url(../img/nav_title_active_bg5.png) no-repeat;
+}
+
+
+/* 四个项 */
+
+.nav4_1 {
+    top: 120px;
+    left: 90px;
+    background: url(../img/nav_title_bg.png) no-repeat;
+}
+
+.nav4_1:hover {
+    background: url(../img/nav_title_active_bg.png) no-repeat;
+}
+
+.nav4_2 {
+    top: 120px;
+    left: 310px;
+    background: url(../img/nav_title_bg2.png) no-repeat;
+}
+
+.nav4_2:hover {
+    background: url(../img/nav_title_active_bg2.png) no-repeat;
+}
+
+.nav4_3 {
+    top: 300px;
+    left: 310px;
+    background: url(../img/nav_title_bg3.png) no-repeat;
+}
+
+.nav4_3:hover {
+    background: url(../img/nav_title_active_bg3.png) no-repeat;
+}
+
+.nav4_4 {
+    top: 300px;
+    left: 90px;
+    background: url(../img/nav_title_bg4.png) no-repeat;
+}
+
+.nav4_4:hover {
+    background: url(../img/nav_title_active_bg4.png) no-repeat;
+}
+
+
+/* 五个项 */
+
+.nav5_1 {
+    top: 55px;
+    left: 190px;
+    background: url(../img/nav_title_bg.png) no-repeat;
+}
+
+.nav5_1:hover {
+    background: url(../img/nav_title_active_bg.png) no-repeat;
+}
+
+.nav5_2 {
+    top: 160px;
+    left: 345px;
+    background: url(../img/nav_title_bg2.png) no-repeat;
+}
+
+.nav5_2:hover {
+    background: url(../img/nav_title_active_bg2.png) no-repeat;
+}
+
+.nav5_3 {
+    top: 330px;
+    left: 300px;
+    background: url(../img/nav_title_bg3.png) no-repeat;
+}
+
+.nav5_3:hover {
+    background: url(../img/nav_title_active_bg3.png) no-repeat;
+}
+
+.nav5_4 {
+    top: 330px;
+    left: 115px;
+    background: url(../img/nav_title_bg4.png) no-repeat;
+}
+
+.nav5_4:hover {
+    background: url(../img/nav_title_active_bg4.png) no-repeat;
+}
+
+.nav5_5 {
+    top: 185px;
+    left: 60px;
+    background: url(../img/nav_title_bg5.png) no-repeat;
+}
+
+.nav5_5:hover {
+    background: url(../img/nav_title_active_bg5.png) no-repeat;
+}
+
+
+/* 六个项 */
+
+.nav6_1 {
+    top: 75px;
+    left: 140px;
+    background: url(../img/nav_title_bg.png) no-repeat;
+}
+
+.nav6_1:hover {
+    background: url(../img/nav_title_active_bg.png) no-repeat;
+}
+
+.nav6_2 {
+    top: 90px;
+    left: 315px;
+    background: url(../img/nav_title_bg2.png) no-repeat;
+}
+
+.nav6_2:hover {
+    background: url(../img/nav_title_active_bg2.png) no-repeat;
+}
+
+.nav6_3 {
+    top: 210px;
+    left: 360px;
+    background: url(../img/nav_title_bg3.png) no-repeat;
+}
+
+.nav6_3:hover {
+    background: url(../img/nav_title_active_bg3.png) no-repeat;
+}
+
+.nav6_4 {
+    top: 330px;
+    left: 290px;
+    background: url(../img/nav_title_bg4.png) no-repeat;
+}
+
+.nav6_4:hover {
+    background: url(../img/nav_title_active_bg4.png) no-repeat;
+}
+
+.nav6_5 {
+    top: 320px;
+    left: 105px;
+    background: url(../img/nav_title_bg5.png) no-repeat;
+}
+
+.nav6_5:hover {
+    background: url(../img/nav_title_active_bg5.png) no-repeat;
+}
+
+.nav6_6 {
+    top: 190px;
+    left: 50px;
+    background: url(../img/nav_title_bg6.png) no-repeat;
+}
+
+.nav6_6:hover {
+    background: url(../img/nav_title_active_bg6.png) no-repeat;
+}
+
+
+/* 七个项 */
+
+.nav7_1 {
+    top: 65px;
+    left: 145px;
+    background: url(../img/nav_title_bg.png) no-repeat;
+}
+
+.nav7_1:hover {
+    background: url(../img/nav_title_active_bg.png) no-repeat;
+}
+
+.nav7_2 {
+    top: 80px;
+    left: 290px;
+    background: url(../img/nav_title_bg2.png) no-repeat;
+}
+
+.nav7_2:hover {
+    background: url(../img/nav_title_active_bg2.png) no-repeat;
+}
+
+.nav7_3 {
+    top: 190px;
+    left: 360px;
+    background: url(../img/nav_title_bg3.png) no-repeat;
+}
+
+.nav7_3:hover {
+    background: url(../img/nav_title_active_bg3.png) no-repeat;
+}
+
+.nav7_4 {
+    top: 300px;
+    left: 340px;
+    background: url(../img/nav_title_bg4.png) no-repeat;
+}
+
+.nav7_4:hover {
+    background: url(../img/nav_title_active_bg4.png) no-repeat;
+}
+
+.nav7_5 {
+    top: 360px;
+    left: 205px;
+    background: url(../img/nav_title_bg5.png) no-repeat;
+}
+
+.nav7_5:hover {
+    background: url(../img/nav_title_active_bg5.png) no-repeat;
+}
+
+.nav7_6 {
+    top: 310px;
+    left: 70px;
+    background: url(../img/nav_title_bg6.png) no-repeat;
+}
+
+.nav7_6:hover {
+    background: url(../img/nav_title_active_bg6.png) no-repeat;
+}
+
+.nav7_7 {
+    top: 170px;
+    left: 50px;
+    background: url(../img/nav_title_bg6.png) no-repeat;
+}
+
+.nav7_7:hover {
+    background: url(../img/nav_title_active_bg6.png) no-repeat;
+}
+
+.nav_avtice {
+    animation: nav_scale 1.5s;
+    -webkit-animation: nav_scale 1.5s;
+    -moz-animation: nav_scale 1.5s;
+    -ms-animation: nav_scale 1.5s;
+}
+
+@keyframes nav_scale {
+    0% {
+        opacity: 0;
+        transform: scale(0.2, 0.2);
+        -ms-transform: scale(0.2, 0.2);
+        -moz-transform: scale(0.2, 0.2);
+        -webkit-transform: scale(0.2, 0.2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -webkit-transform: scale(1, 1);
+    }
+}

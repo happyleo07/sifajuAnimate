@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/nav_animate.css">
+    <title>旋转demo</title>
+</head>
+
+<body>
+    <div class="nav_animate_bbox">
+        <div class="rotate_box1">
+            <div class="ce3 rotate_po"></div>
+            <div class="ce2 rotate_po"></div>
+            <div class="ce1 rotate_po"></div>
+            <div class="title_box">
+                <a href="#">民警全息</a>
+                <!-- <a href="#" class="jj">首页</a> -->
+            </div>
+            <div class="nav_title nav5_1">
+                <a href="#">绩效</br>考核</a>
+                <!-- <a href="#" class="jj">OA</a> -->
+            </div>
+            <div class="nav_title nav5_2">
+                <a href="#">教育</br>培训</a>
+            </div>
+            <div class="nav_title nav5_3">
+                <a href="#">人力</br>资源</a>
+            </div>
+            <div class="nav_title nav5_4">
+                <a href="#">警务</br>装备</a>
+            </div>
+            <div class="nav_title nav5_5">
+                <a href="#">警务</br>评估</a>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.11.0.js"></script>
+    <script>
+        $(function() {
+            $(".rotate_box1 .ce3,.rotate_box1 .ce1").addClass("rotate_clockwise");
+            $(".rotate_box1 .ce2").addClass("rotate_anticlockwise");
+            // $(".fivestar").addClass("fivetar_active");
+            $(".title_box a").addClass("nav_avtice");
+            $(".nav_title").addClass("nav_avtice");
+        });
+    </script>
+</body>
+
+</html>
